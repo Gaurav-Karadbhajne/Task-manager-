@@ -32,7 +32,7 @@ const App = () => {
 
   const handleUpdateTask = (task) => {
     setTasks((prevTasks) => prevTasks.map((t) => (t.id === task.id ? task : t)));
-    toast.success("Task updated!");
+    
     setTaskToEdit(null);
   };
 
